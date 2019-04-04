@@ -1302,13 +1302,13 @@ db_get_current();
 
         function submit_test_agg_report_form()
         {
-            var yyyy_from = $('#yyyy_from').attr('value');
-            var mm_from = $('#mm_from').attr('value');
-            var dd_from = $('#dd_from').attr('value');
+            var yyyy_from = $('#yyyy_from16').attr('value');
+            var mm_from = $('#mm_from16').attr('value');
+            var dd_from = $('#dd_from16').attr('value');
 
-            var yyyy_to = $('#yyyy_to').attr('value');
-            var mm_to = $('#mm1_to').attr('value');
-            var dd_to = $('#dd_to').attr('value');
+            var yyyy_to = $('#yyyy_to16').attr('value');
+            var mm_to = $('#mm_to16').attr('value');
+            var dd_to = $('#dd_to16').attr('value');
 
             var test_id = $('#select_test_for_report').attr('value');
             var site = $('#select_site_for_report').attr('value');
@@ -3261,7 +3261,7 @@ alert(dd_to);
                                 <td>
                                     <?php
                                     $name_list = array('yyyy_from', 'mm_from', 'dd_from');
-                                    $id_list = array('yyyy_from', 'mm_from', 'dd_from');
+                                    $id_list = array('yyyy_from16', 'mm_from16', 'dd_from16');
                                     $value_list = $monthago_array;
                                     $page_elems->getDatePicker($name_list, $id_list, $value_list);
                                     ?>
@@ -3272,7 +3272,7 @@ alert(dd_to);
                                 <td>
                                     <?php
                                     $name_list = array('yyyy_to', 'mm_to', 'dd_to');
-                                    $id_list = array('yyyy_to', 'mm1_to', 'dd_to');
+                                    $id_list = array('yyyy_to16', 'mm_to16', 'dd_to16');
                                     $value_list = $today_array;
                                     $page_elems->getDatePicker($name_list, $id_list, $value_list);
                                     ?>
@@ -3289,7 +3289,7 @@ alert(dd_to);
                                 </td>
                             </tr>
                             <tr valign="top">
-                                <td><?php echo LangUtil::$pageTerms['SITE']; ?></td>
+                                <td><?php echo LangUtil::$pageTerms['FACILITY']; ?></td>
                                 <td>
                                     <select id="select_site_for_report"
                                             name="select_site_for_report">
